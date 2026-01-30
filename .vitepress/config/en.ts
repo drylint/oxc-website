@@ -13,6 +13,17 @@ export const enConfig = defineLocaleConfig("root", {
   themeConfig: {
     nav: [
       { text: "Guide", link: "/docs/guide/introduction" },
+      {
+        text: "Tools",
+        items: [
+          { text: "Linter (Oxlint)", link: "/docs/guide/usage/linter" },
+          { text: "Formatter (Oxfmt)", link: "/docs/guide/usage/formatter" },
+          { text: "Parser", link: "/docs/guide/usage/parser" },
+          { text: "Transformer", link: "/docs/guide/usage/transformer" },
+          { text: "Minifier", link: "/docs/guide/usage/minifier" },
+          { text: "Resolver", link: "/docs/guide/usage/resolver" },
+        ],
+      },
       { text: "Contribute", link: "/docs/contribute/introduction" },
       {
         text: "Playground",
