@@ -211,6 +211,9 @@ export const sharedConfig = defineConfig({
   },
   vite: {
     publicDir: resolve(dirname(fileURLToPath(import.meta.url)), "../../public"),
+    build: {
+      chunkSizeWarningLimit: 3000,
+    },
     optimizeDeps: {
       exclude: ["@docsearch/css"],
     },
